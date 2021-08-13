@@ -1,4 +1,13 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.name {
+    font-family: "Fredoka One", cursive;
+    font-size: 3rem;
+    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #ffffff, 3px 3px 0 rgb(255, 255, 255), 4px 4px 0 #000000, 5px 5px 0 rgb(0, 0, 0), 
+    6px 6px 0 rgb(0, 0, 0), 7px 7px 0 rgb(0, 0, 0), 8px 8px 0 rgb(0, 0, 0), 9px 9px 0 rgb(0, 0, 0);
+}
+
+.carosel {
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,8 +17,8 @@ body {
 }
 
 .displayRotation {
-    height: 400px;
-    width: 750px;
+    height: 750px;
+    width: 1300px;
     overflow: hidden;
     box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
 }
@@ -22,4 +31,8 @@ body {
 .rotation img{
     height: 100%;
     width: 100%;
+}
+
+.login {
+    text-align: right;
 }
