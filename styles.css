@@ -11,7 +11,7 @@
     height: 750px;
     width: 1300px;
     overflow: hidden;
-    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.4);
 }
 
 .displayRotation .rotation {

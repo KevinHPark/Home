@@ -3,11 +3,14 @@
 .name {
     font-family: "Fredoka One", cursive;
     font-size: 3rem;
-    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #ffffff, 3px 3px 0 rgb(255, 255, 255);
+    color: white;
+    text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000, 3px 3px 0 rgb(0, 0, 0),4px 4px 0 rgb(0, 0, 0),5px 5px 0 rgb(0, 0, 0);
 }
 
 body {
     font-weight: 400;
+    margin: 0;
+    background-color: black;
 }
 
 .navBar {
@@ -16,7 +19,7 @@ body {
 }
 
 header {
-    background: #000000;
+    background: #ffffff;
 }
 
 nav {
@@ -37,13 +40,41 @@ nav li {
     position: relative;
 }
 
+.name {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.name:hover {
+    color: #000000;
+}
+
+.name::before {
+    content: " ";
+    display: block;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+
+    bottom: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+.name:hover::before {
+    width: 100%;
+}
+
 nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 35px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-family: "Fredoka One", cursive;
-    text-shadow: 0.5px 0.5px 0 #ffffff, 1px 1px 0 #ffffff, 1.5px 1.5px 0 rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 0 #000000, 1px 1px 0 #000000, 1.5px 1.5px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0), 2.5px 2.5px 0 rgb(0, 0, 0);
 }
 
 .login {
@@ -51,14 +82,14 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 nav a::before {
     content: " ";
     display: block;
     height: 5px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     position: absolute;
 
     top: 0;
