@@ -41,6 +41,16 @@ body {
     text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000, 3px 3px 0 rgb(0, 0, 0),4px 4px 0 rgb(0, 0, 0),5px 5px 0 rgb(0, 0, 0);
 }
 
+.mainLogo {
+    content: " ";
+    display: block;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+
+    bottom: 0;
+    width: 0%;
+}
 
 /* Cart */
 .cart {
