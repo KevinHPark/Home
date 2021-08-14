@@ -24,22 +24,21 @@
             </div>
         </div>
     </header>
-    <script src="login.js"></script>
 
     <!-- Sign in Stuff -->
     <div class="loginBox">
         <img src="Assets\Images\Logo.png" class="logo">
         <h1>Login Here</h1>
-        <form>
+        <form name="loginForm" method="POST" onsubmit="checkLogin()">
             <p>Username</p>
-            <input type="text" name="" placeholder="Enter Username">
+            <input type=" text" name="" placeholder="Enter Username">
             <p>Password</p>
             <input type="password" name="" placeholder="Enter Password">
             <input type="submit" name="" value="Login">
             <a href="signUp.html">Dont have an account?</a>
         </form>
     </div>
-
+    <script src="login.js"></script>
 </body>
 
 </html>
