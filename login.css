@@ -69,7 +69,7 @@ h1 {
     font-size: 16px;
 }
 
-.loginBox input[type = "submit"] {
+.loginBox input[type = "button"] {
     border: none;
     outline: none;
     height: 40px;
@@ -78,7 +78,7 @@ h1 {
     font-size: 18px;
 }
 
-.loginBox input[type = "submit"]:hover {
+.loginBox input[type = "button"]:hover {
     cursor: pointer;
     background: white;
     color: rgb(0, 0, 0);

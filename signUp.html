@@ -3,9 +3,9 @@
 <head>
     <title>Home.com</title>
 
-    <link rel="Stylesheet" href="styles.css"/>
-    <link rel="Stylesheet" href="navBar.css"/>
-    <link rel="Stylesheet" href="login.css"/>
+    <link rel="Stylesheet" href="styles.css" />
+    <link rel="Stylesheet" href="navBar.css" />
+    <link rel="Stylesheet" href="login.css" />
 </head>
 
 <body>
@@ -13,11 +13,11 @@
     <header>
         <div class="navBar">
             <div>
-                <a class = "name" href = "Front.html">HOME</a>
-                <a class = "cart" href="cart.html">Cart</a>
+                <a class="name" href="Front.html">HOME</a>
+                <a class="cart" href="cart.html">Cart</a>
                 <nav>
                     <ul>
-                        <li><a id = "loginName" href="signIn.html">Login</a></li>
+                        <li><a id="loginName" href="signIn.html">Login</a></li>
                     </ul>
                 </nav>
             </div>
@@ -28,19 +28,19 @@
     <div class="loginBox">
         <img src="Assets\Images\Logo.png" class="logo">
         <h1>Sign Up Here</h1>
-        <form name = "loginForm" method = "POST" onsubmit="checkLogin()">
+        <form>
             <p>Create Username</p>
-            <input type="text" name="username" placeholder="Create Username">
+            <input type="text" id="username" placeholder="Create Username">
             <p>Create Password</p>
-            <input type="password" name="password" placeholder="Create Password">
-            <input type="submit" name="" value="Sign Up">
+            <input type="password" id="password" placeholder="Create Password">
+            <input type="button" id="submitButton" value="Sign Up" onclick="store()">
             <a href="signIn.html">Have an account?</a>
         </form>
     </div>
 
     <script src="login.js"></script>
 
-    
+
 </body>
 
 </html>
