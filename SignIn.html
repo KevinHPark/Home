@@ -3,42 +3,43 @@
 <head>
     <title>Home.com</title>
 
-    <link rel="Stylesheet" href="styles.css"/>
-    <link rel="Stylesheet" href="navBar.css"/>
-    <link rel="Stylesheet" href="login.css"/>
+    <link rel="Stylesheet" href="styles.css" />
+    <link rel="Stylesheet" href="navBar.css" />
+    <link rel="Stylesheet" href="login.css" />
 </head>
 
 <body>
-    
+
     <!-- nav bar -->
     <header>
         <div class="navBar">
             <div>
-                <a class = "name" href = "Front.html">HOME</a>
-                <a class = "cart" href="cart.html">Cart</a>
+                <a class="name" href="Front.html">HOME</a>
+                <a class="cart" href="cart.html">Cart</a>
                 <nav>
                     <ul>
-                        <li><a class = "loginName" href="signIn.html">Login</a></li>
+                        <li><a class="loginName" href="signIn.html">Login</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <script src="login.js"></script>
-    <!-- Sign in stuff -->
-    <form onsubmit="return false;">
-        <div class="Login">
-            <label for="name">Username: </label>
-            <input type="text" name="username" id="user" required>
-        </div>
-        <div class="Login">
-            <label for="password">Password: </label>
-            <input type="password" name="password" id="password" required>
-        </div>
-        <div class="Login">
-            <input type="submit" value="signIn">
-        </div>
-    </form>
+
+    <!-- Sign in Stuff -->
+    <div class="loginBox">
+        <img src="Assets\Images\Logo.png" class="logo">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <input type="submit" name="" value="Login">
+            <a href="signUp.html">Dont have an account?</a>
+        </form>
+    </div>
+
 </body>
 
 </html>
