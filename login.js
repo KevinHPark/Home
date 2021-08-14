@@ -1,4 +1,11 @@
-let users = []
+let users;
+let serializedUsers = localStorage.getItem("users")
+//let users = JSON.parse(serializedUsers)
+if(serializedUsers === null){
+    users = []
+} else {
+    users = JSON.parse(serializedUsers)
+}
 
 function store() {
     let newUser = document.querySelector("username");
@@ -18,7 +25,7 @@ localStorage.setItem("username", username.value);
 
 // checkLogin()
 
-let serializedUsers = JSON.stringify(users)
+serializedUsers = JSON.stringify(users)
 localStorage.setItem("users", serializedUsers)
 
 // let userH1 = document.forms["loginForm"]["username"];
