@@ -3,26 +3,29 @@
 <head>
     <title>Homecart.com</title>
 
-    <link rel="Stylesheet" href="navBar.css"/>
+    <link rel="Stylesheet" href="navBar.css" />
     <link rel="Stylesheet" href="carosel.css"/>
+    <link rel="Stylesheet" href="items.css"/>
     <script src="rotateDisplay.js"></script>
 </head>
 
 <body>
+    <!-- Kevins super cool Navbar -->
     <header>
         <div class="navBar">
             <div>
-                <a class = "name" href = "index.html">HOME</a>
-                <a class = "cart" href="cart.html">Cart</a>
+                <a class="name" href="index.html">HOME</a>
+                <a class="cart" href="cart.html">Cart</a>
                 <nav>
                     <ul>
-                        <a class = "login" id = "loginName" href="signIn.html">Login</a>
+                        <a class="login" id="loginName" href="signIn.html">Login</a>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
+    <!-- Kevins Rotating Display Idea that I definetly didnt steal from Amazon -->
     <div class="carosel">
         <div class="displayRotation">
             <div class="rotation">
@@ -32,10 +35,23 @@
                 <img src="Assets\Images\Display4.jpg">
                 <img src="Assets\Images\Display5.jpg">
                 <img src="Assets\Images\Display6.jpg">
+                <div class="recommendBox">
+                    <div class="recommendText">
+                        <h1>Recommendation</h1>
+                    </div>
+                </div>
+                <div class="recentlyViewed">
+                    <div class="recentlyText">
+                        <h1>Recently Viewed</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+    <div class = "items">
+
+    </div>
+
     <script src="login.js"></script>
 </body>
 
