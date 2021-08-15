@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     background-position: center;
-    font-family: "Fredoka One", cursive;
+    font-family: 'Georama', sans-serif;
 }
 
 .cartBox {
-    width: 1520px;
+    width: 1480px;
     height: 520px;
     background: rgb(255, 255, 255);
     top: 50%;
-    left: 10%;
+    left: 39%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
@@ -21,10 +21,10 @@ body {
 
 .totalBox {
     width: 400px;
-    height: 520px;
+    height: 100px;
     background: rgb(255, 255, 255);
     top: 22.8%;
-    right: 28%;
+    right: 1%;
     position: absolute;
     box-sizing: border-box;
     padding: 30px 30px;
@@ -32,7 +32,17 @@ body {
 
 .total {
     color:black;
-    font-family: "Fredoka One", cursive;
+    font-family: 'Georama', sans-serif;
     position: absolute;
     left: 40%;
+    top: -20%;
 }
+
+.shoppingCart {
+    color: black;
+    font-family: 'Georama', sans-serif;
+    left: 2%;
+    top: 0%;
+    position: absolute;
+}
+

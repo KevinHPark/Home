@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+/* font-family: 'Georama', sans-serif; */
 .recommendBox {
     position: absolute;
     bottom: 20px;
@@ -11,9 +12,9 @@
 }
 
 .recommendText {
-    font-family: "Fredoka One", cursive;
-    color: rgb(0, 0, 0);
-    text-shadow: 0.5px 0.5px 0 #ffffff, 1px 1px 0 #ffffff, 1.5px 1.5px 0 rgb(255, 255, 255), 2px 2px 0 rgb(255, 255, 255), 2.5px 2.5px 0 rgb(255, 255, 255);
+    font-family: 'Georama', sans-serif;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 0.5px 0.5px 0 #000000, 1px 1px 0 #000000, 1.5px 1.5px 0 rgb(255, 255, 255), 2px 2px 0 rgb(255, 255, 255), 2.5px 2.5px 0 rgb(255, 255, 255); */
 }
 
 .recentlyViewed {
@@ -27,9 +28,9 @@
 }
 
 .recentlyText {
-    font-family: "Fredoka One", cursive;
-    color: rgb(0, 0, 0);
-    text-shadow: 0.5px 0.5px 0 #ffffff, 1px 1px 0 #ffffff, 1.5px 1.5px 0 rgb(255, 255, 255), 2px 2px 0 rgb(255, 255, 255), 2.5px 2.5px 0 rgb(255, 255, 255);
+    font-family: 'Georama', sans-serif;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 0.5px 0.5px 0 #000000, 1px 1px 0 #000000, 1.5px 1.5px 0 rgb(255, 255, 255), 2px 2px 0 rgb(255, 255, 255), 2.5px 2.5px 0 rgb(255, 255, 255); */
 }
 
 .rotation {
