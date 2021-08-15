@@ -2,9 +2,9 @@
 
 <head>
     <title>HomeCart.com</title>
-
-    <link rel="Stylesheet" href="login.css" />
+    
     <link rel="Stylesheet" href="navBar.css" />
+    <link rel="Stylesheet" href="login.css" />
 </head>
 
 <body>
@@ -16,23 +16,23 @@
                 <a class="cart" href="cart.html">Cart</a>
                 <nav>
                     <ul>
-                        <a class="login" id="loginName" href="login.html">Login</a>
+                        <a class="login" id="loginName" href="signIn.html">Login</a>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-     <!-- Kevins super cool sign in box -->
-     <div class="loginBox">
+    <!-- Kevins super cool sign in box -->
+    <div class="loginBox">
         <img src="Assets\Images\Logo.png" class="logo">
-        <h1>Profile</h1>
+        <h1>Login Here</h1>
         <form>
-            <input class = "signOut" type="button" name="" value="Sign Out" onclick="signOut()">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <input type="button" name="" value="Login">
+            <a href="signUp.html">Dont have an account?</a>
         </form>
-        <p>Currently no way of signing out</p>
-        <p>-------------------------------</p>
-        <p>Inspect Element - > Local Storage - > Delete User - > Refresh Page</p>
     </div>
     <script src="login.js"></script>
 </body>
