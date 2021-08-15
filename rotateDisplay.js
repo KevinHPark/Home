@@ -1,6 +1,6 @@
 let indexValue = 0;
 function carousel() {
-    setTimeout(carousel, 4000);
+    setTimeout(carousel, 10000);
     const img = document.querySelectorAll("img");
     for (let x = 0; x < img.length; x++) {
         img[x].style.display = "none";
