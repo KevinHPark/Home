@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    font-family: "Fredoka One", cursive;
+}
+
+.cartBox {
+    width: 1520px;
+    height: 520px;
+    background: rgb(255, 255, 255);
+    top: 50%;
+    left: 10%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+.totalBox {
+    width: 400px;
+    height: 520px;
+    background: rgb(255, 255, 255);
+    top: 22.8%;
+    right: 28%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+.total {
+    color:black;
+    font-family: "Fredoka One", cursive;
+    position: absolute;
+    left: 50%;
+    
+}

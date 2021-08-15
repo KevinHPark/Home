@@ -1,25 +1,12 @@
 let users = [];
-let serializedUsers = localStorage.getItem("users")
-//let users = JSON.parse(serializedUsers)
-// if(serializedUsers === null){
-//     users = []
-// } else {
-//     users = JSON.parse(serializedUsers)
-// }
 
 function store() {
-    let newUser = document.querySelector("username");
-    return newUser;
-    // localStorage.setItem("username", username.value);
+    let newUser = document.querySelector("#username");
+    let valueUser = newUser.value;
+    users.push(valueUser);
+    serializedUsers = JSON.stringify(users);
+    localStorage.setItem("users", serializedUsers);
 }
-let valueUser = store();
-users.push(valueUser)
-
-localStorage.setItem("username", username.value);
-
-serializedUsers = JSON.stringify(users)
-localStorage.setItem("users", serializedUsers)
-
 
 // let userH1 = document.forms["loginForm"]["username"];
 
@@ -28,3 +15,10 @@ localStorage.setItem("users", serializedUsers)
 // alert(localStorage.getItem("userH1"));
 
 // userH1.innerHTML = `${userName}`;
+
+//let users = JSON.parse(serializedUsers)
+// if(serializedUsers === null){
+//     users = []
+// } else {
+//     users = JSON.parse(serializedUsers)
+// }
