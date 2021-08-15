@@ -1,4 +1,6 @@
 let users = [];
+let userH1 = document.querySelector("#loginName");
+userH1.value = users;
 
 function store() {
     let newUser = document.querySelector("#username");
@@ -9,13 +11,14 @@ function store() {
     window.location.href = "index.html";
 }
 
+
+
+// newUser.innerHTML = `${users}`;
 // let userH1 = document.forms["loginForm"]["username"];
 
 // userH1 = localStorage.setItem(user);
 
 // alert(localStorage.getItem("userH1"));
-
-// userH1.innerHTML = `${userName}`;
 
 //let users = JSON.parse(serializedUsers)
 // if(serializedUsers === null){
