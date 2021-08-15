@@ -15,7 +15,7 @@ function store() {
     users.push(valueUser);
     serializedUsers = JSON.stringify(users);
     localStorage.setItem("users", serializedUsers);
- 
+    window.location.href = "index.html";
 }
 
 // newUser.innerHTML = `${users}`;
