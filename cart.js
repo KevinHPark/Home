@@ -22,12 +22,13 @@ function addToCart(title, price, picturePath) {
   localStorage.setItem("productInCart", grabHand)
 }
 
+let productsInCart = JSON.parse(localStorage.getItem("productsInCart"));
 let productsUL = document.querySelector("#cart-products");
-let productsToDraw = []
 
 function drawProducts(productsToDraw) {
   productsUL.innerHTML = "";
 
+  let totalPrice = 0;
   for (let index = 0; index < productsToDraw.length; index++) {
     let product = productsToDraw[index];
     let li = document.createElement("li");
@@ -35,19 +36,25 @@ function drawProducts(productsToDraw) {
     let h3 = document.createElement("h3");
     h3.textContent = product.title;
     li.appendChild(h3);
-    let p = document.createElement("p");
-    p.textContent = `${product.price}`;
-    li.appendChild(p);
     let img = document.createElement("img");
     img.setAttribute("alt", product.title);
     img.setAttribute("src", product.picturePath);
     li.appendChild(img);
+    let p = document.createElement("p");
+    p.textContent = `${product.price}`;
+    li.appendChild(p);
     let btn = document.createElement("button");
     btn.setAttribute("onclick", `removeFromCart(${index})`);
     btn.textContent = "Remove from cart";
     li.appendChild(btn);
+
+    totalPrice += product.price;
   }
+  let priceText = document.querySelector(".displayPrice")
+  priceText.textContent =`$${totalPrice}`
 }
+
+
 
 // Note: this invokes the drawProducts function when our page loads
 drawProducts(productInCart);
@@ -58,5 +65,7 @@ function removeFromCart(i) {
     return i !== index;
   });
   //Note: redraw products to screen...
+  localStorage.setItem('productInCart', productInCart);
   drawProducts(productInCart);
+  alert('removed from cart');
 }

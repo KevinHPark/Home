@@ -17,10 +17,3 @@ function store() {
     localStorage.setItem("users", serializedUsers);
     window.location.href = "index.html";
 }
-
-// newUser.innerHTML = `${users}`;
-// let userH1 = document.forms["loginForm"]["username"];
-
-// userH1 = localStorage.setItem(user);
-
-// alert(localStorage.getItem("userH1"));
