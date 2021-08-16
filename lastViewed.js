@@ -1,23 +1,23 @@
-let viewedStore = localStorage.getItem("view")
-let viewCurrent = document.querySelector(".current");
-viewCurrent.innerHTML = "No products viewed"
+// let viewedStore = localStorage.getItem("view")
+// let viewCurrent = document.querySelector(".current");
+// viewCurrent.innerHTML = "No products viewed"
 
-if(viewedStore === null){
-    let view = []
-} else {
+// if(viewedStore === null){
+//     let view = []
+// } else {
   
-    viewCurrent = `${view}`;
-}
+//     viewCurrent = `${view}`;
+// }
 
 
-function viewBox(){
-    let current = document.createElement("img")
-    current.src = "Assets/Image/Product1.jpg"
-    document.querySelector('.current').appendChild(current)
-    view.push(current)
-    viewStore = JSON.stringify(view)
-    localStorage.setItem("view", current.value)
-}
+// function viewBox(){
+//     let current = document.createElement("img")
+//     current.src = "Assets/Image/Product1.jpg"
+//     document.querySelector('.current').appendChild(current)
+//     view.push(current)
+//     viewStore = JSON.stringify(view)
+//     localStorage.setItem("view", current.value)
+// }
 
 // let serializedUsers = localStorage.getItem("users")
 // let userH1 = document.querySelector("#loginName");
