@@ -25,3 +25,10 @@
     bottom: -30%;
     left: -5%;
 }
+
+.product2 {
+    position: absolute;
+    scale: 30%;
+    bottom: -32%;
+    left: -2%;
+}

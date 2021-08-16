@@ -23,19 +23,10 @@ function addToCart(title, price, picturePath) {
 }
 
 let productsUL = document.querySelector("#cart-products");
+let productsToDraw = []
 
 function drawProducts(productsToDraw) {
   productsUL.innerHTML = "";
-
-   /* 
-    This is what an example li will look like
-    <li>
-        <h3>Duct tape</h3>
-        <p><b>$4.72</b></p>
-        <img alt="duct tape" src="assets/duct-tape.png"/>
-        <button onclick="removeFromCart(0)">Remove from cart</button> 
-    </li>
-    */
 
   for (let index = 0; index < productsToDraw.length; index++) {
     let product = productsToDraw[index];
